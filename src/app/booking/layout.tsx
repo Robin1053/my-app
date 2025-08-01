@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Roboto } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import dynamic from 'next/dynamic';
 
-const ConfettiWrapper = dynamic(() => import('./components/ConfettiWrapper'));
+const ConfettiWrapper = dynamic(() => import('../components/ConfettiWrapper'));
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 const roboto = Roboto({ variable: "--font-roboto", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Home",
-  description: "Valentinstags Page",
+  title: "Stepper",
+  description: "Date-Stepper",
 };
 
 export default function RootLayout({
